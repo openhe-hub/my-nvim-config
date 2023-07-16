@@ -23,6 +23,7 @@ return require('packer').startup(function(use)
   -- theme
   use 'folke/tokyonight.nvim'
   -- status bar && icon
+  use 'nvim-tree/nvim-web-devicons'
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
@@ -44,7 +45,7 @@ return require('packer').startup(function(use)
   -- mason lsp
   use {
     "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",  -- 这个相当于mason.nvim和lspconfig的桥梁
+    "williamboman/mason-lspconfig.nvim", 
     "neovim/nvim-lspconfig"
   }
   
@@ -62,7 +63,7 @@ return require('packer').startup(function(use)
   use "lewis6991/gitsigns.nvim"
 
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.1',  -- 文件检索
+    'nvim-telescope/telescope.nvim', tag = '0.1.1', 
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
