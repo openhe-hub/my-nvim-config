@@ -61,6 +61,9 @@ return require('packer').startup(function(use)
 
   use "akinsho/bufferline.nvim"
   use "lewis6991/gitsigns.nvim"
+
+  -- auto-cmp icon
+  use "onsails/lspkind.nvim"
   
   -- telescope
   use {
@@ -73,6 +76,7 @@ return require('packer').startup(function(use)
 
   -- indent line
   use "lukas-reineke/indent-blankline.nvim"
+
 
 
   if packer_bootstrap then
