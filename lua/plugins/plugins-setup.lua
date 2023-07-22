@@ -77,7 +77,8 @@ return require('packer').startup(function(use)
   -- indent line
   use "lukas-reineke/indent-blankline.nvim"
 
-
+  -- start dashboard
+  use "glepnir/dashboard-nvim"
 
   if packer_bootstrap then
     require('packer').sync()
