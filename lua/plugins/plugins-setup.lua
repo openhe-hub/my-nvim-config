@@ -75,7 +75,7 @@ return require('packer').startup(function(use)
   use 'voldikss/vim-floaterm'
 
   -- indent line
-  use "lukas-reineke/indent-blankline.nvim"
+  -- use "lukas-reineke/indent-blankline.nvim"
 
   -- start dashboard
   use "glepnir/dashboard-nvim"
