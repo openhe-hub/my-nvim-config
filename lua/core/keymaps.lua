@@ -10,5 +10,5 @@ keymap.set("n", "<leader>h", "<C-w>s")
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 
 -- buffer line
-keymap.set("n", "<leader>h", ":bnext<CR>")
-keymap.set("n", "<leader>l", ":bprevious<CR>")
+keymap.set("n", "<leader>l", ":bnext<CR>")
+keymap.set("n", "<leader>h", ":bprevious<CR>")
