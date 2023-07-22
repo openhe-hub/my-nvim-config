@@ -48,7 +48,7 @@ return require('packer').startup(function(use)
     "williamboman/mason-lspconfig.nvim", 
     "neovim/nvim-lspconfig"
   }
-  
+ 
   -- auto-complete
   use "hrsh7th/nvim-cmp"
   use "hrsh7th/cmp-nvim-lsp"
@@ -70,6 +70,9 @@ return require('packer').startup(function(use)
 
   -- floaterm
   use 'voldikss/vim-floaterm'
+
+  -- indent line
+  use "lukas-reineke/indent-blankline.nvim"
 
 
   if packer_bootstrap then
