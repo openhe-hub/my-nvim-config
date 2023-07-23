@@ -110,7 +110,10 @@ return require('packer').startup(function(use)
     config = function()
         require('Comment').setup()
     end
-  } 
+  }
+
+  -- formatter
+  use "sbdchd/neoformat"
   
   if packer_bootstrap then
     require('packer').sync()

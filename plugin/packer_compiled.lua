@@ -150,6 +150,11 @@ _G.packer_plugins = {
     path = "/home/zhewen/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  neoformat = {
+    loaded = true,
+    path = "/home/zhewen/.local/share/nvim/site/pack/packer/start/neoformat",
+    url = "https://github.com/sbdchd/neoformat"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/zhewen/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
