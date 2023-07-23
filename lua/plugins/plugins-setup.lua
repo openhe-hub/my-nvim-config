@@ -28,6 +28,7 @@ return require('packer').startup(function(use)
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
+  -- use 'ryanoasis/vim-devicons'
   -- document tree
   use {
     'nvim-tree/nvim-tree.lua',
@@ -88,6 +89,14 @@ return require('packer').startup(function(use)
   })
 
   use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+  
+  -- = breadcrumb navigation
+  use {'fgheng/winbar.nvim'}
+  use {
+    "SmiteshP/nvim-navic",
+    requires = "neovim/nvim-lspconfig"
+  }
+
 
   if packer_bootstrap then
     require('packer').sync()
