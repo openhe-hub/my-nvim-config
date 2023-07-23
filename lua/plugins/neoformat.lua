@@ -10,6 +10,7 @@ g.neoformat_lua_luaformat = {
     stdin = 1
 }
 
+-- clang format
 g.neoformat_enabled_cpp = {'clang-format'}
 g.neoformat_cpp_clangformat = {
     exe = 'clang-format',

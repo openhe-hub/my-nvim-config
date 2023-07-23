@@ -15,3 +15,6 @@ keymap.set("n", "<leader>h", ":bprevious<CR>")
 
 -- markdown preview
 keymap.set("n", "<leader>mm", ":MarkdownPreview<CR>")
+
+-- format
+keymap.set("n", "<leader>f", ":Neoformat<CR>")
