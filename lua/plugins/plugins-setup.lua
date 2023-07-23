@@ -103,6 +103,14 @@ return require('packer').startup(function(use)
     "folke/todo-comments.nvim",
     requires = "nvim-lua/plenary.nvim"
   }
+
+  -- comment / un-comment
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  } 
   
   if packer_bootstrap then
     require('packer').sync()
