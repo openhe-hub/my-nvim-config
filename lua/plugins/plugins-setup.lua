@@ -90,14 +90,20 @@ return require('packer').startup(function(use)
 
   use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
   
-  -- = breadcrumb navigation
+  -- breadcrumb navigation
   use {'fgheng/winbar.nvim'}
   use {
     "SmiteshP/nvim-navic",
     requires = "neovim/nvim-lspconfig"
   }
 
-
+  -- to do highlight
+  use "nvim-lua/plenary.nvim"
+  use {
+    "folke/todo-comments.nvim",
+    requires = "nvim-lua/plenary.nvim"
+  }
+  
   if packer_bootstrap then
     require('packer').sync()
   end
