@@ -13,7 +13,8 @@ require("mason-lspconfig").setup({
     "lua_ls",
     "pyright",
     "pylsp",
-    "clangd"
+    "clangd",
+    "cssls"
   },
 })
 
@@ -32,6 +33,10 @@ require("lspconfig").clangd.setup {
 }
 
 require("lspconfig").elmls.setup{
+  capabilities = capabilities
+}
+
+require("lspconfig").cssls.setup{
   capabilities = capabilities
 }
 
