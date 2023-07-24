@@ -22,3 +22,6 @@ keymap.set("n", "<leader>f", ":Neoformat<CR>")
 -- go to definirion
 keymap.set("n", "gd" , "<cmd>lua vim.lsp.buf.definition()<CR>", {noremap = true, silent = true})
 keymap.set("n", "gh" , "<cmd>lua vim.lsp.buf.hover()<CR>", {noremap = true, silent = true})
+
+-- live server
+keymap.set("n", "<leader>ls", ":LiveServerStart<CR>", {noremap = true, silent = true})
