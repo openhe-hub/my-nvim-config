@@ -126,5 +126,33 @@ return require('packer').startup(function(use)
     config = function() require('aerial').setup() end
   }
 
+  -- latex
+  use {
+    'lervag/vimtex',
+    opt = true,
+    config = function()
+      vim.g.vimtex_view_general_viewer = 'okular'
+      vim.g.vimtex_compiler_latexmk_engines = {_ = '-xelatex'}
+      vim.g.tex_comment_nospell = 1
+      vim.g.vimtex_compiler_progname = 'nvr'
+      vim.g.vimtex_view_general_options = [[--unique file:@pdf\#src:@line@tex]]
+      vim.g.vimtex_view_general_options_latexmk = '--unique'
+    end,
+    ft = 'tex'
+  }
+
+  use {
+    "iurimateus/luasnip-latex-snippets.nvim",
+    -- vimtex isn't required if using treesitter
+    requires = {"L3MON4D3/LuaSnip", "lervag/vimtex"},
+    config = function()
+      require'luasnip-latex-snippets'.setup()
+      -- or setup({ use_treesitter = true })
+    end
+  }
+
+  -- cmake tools
+  use 'Civitasv/cmake-tools.nvim' 
+
   if packer_bootstrap then require('packer').sync() end
 end)

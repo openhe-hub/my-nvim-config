@@ -14,7 +14,8 @@ require("mason-lspconfig").setup({
     "pyright",
     "pylsp",
     "clangd",
-    "cssls"
+    "cssls",
+    "cmake"
   },
 })
 
@@ -37,6 +38,10 @@ require("lspconfig").elmls.setup{
 }
 
 require("lspconfig").cssls.setup{
+  capabilities = capabilities
+}
+
+require("lspconfig").cmake.setup{
   capabilities = capabilities
 }
 
