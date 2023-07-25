@@ -87,8 +87,6 @@ return require('packer').startup(function(use)
     run = function() vim.fn["mkdp#util#install"]() end
   })
 
-  -- use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
-
   -- breadcrumb navigation
   use {'fgheng/winbar.nvim'}
   use {"SmiteshP/nvim-navic", requires = "neovim/nvim-lspconfig"}
@@ -112,6 +110,16 @@ return require('packer').startup(function(use)
     run = function() require"live_server.util".install() end,
     cmd = {"LiveServer", "LiveServerStart", "LiveServerStop"}
   })
+
+  -- auto save
+  -- Lua
+  use {
+    '0x00-ketsu/autosave.nvim',
+    config = function()
+      require('autosave').setup {
+     }
+    end
+  }
 
   if packer_bootstrap then require('packer').sync() end
 end)
