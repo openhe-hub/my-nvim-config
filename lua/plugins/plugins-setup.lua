@@ -111,8 +111,7 @@ return require('packer').startup(function(use)
     cmd = {"LiveServer", "LiveServerStart", "LiveServerStop"}
   })
 
-  -- auto save
-  -- Lua
+  -- auto save && auto load
   use {
     '0x00-ketsu/autosave.nvim',
     config = function()
@@ -120,6 +119,8 @@ return require('packer').startup(function(use)
      }
     end
   }
+
+  use 'djoshea/vim-autoread'
 
   if packer_bootstrap then require('packer').sync() end
 end)

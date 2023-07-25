@@ -234,6 +234,11 @@ _G.packer_plugins = {
     path = "/home/zhewen/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
+  ["vim-autoread"] = {
+    loaded = true,
+    path = "/home/zhewen/.local/share/nvim/site/pack/packer/start/vim-autoread",
+    url = "https://github.com/djoshea/vim-autoread"
+  },
   ["vim-floaterm"] = {
     loaded = true,
     path = "/home/zhewen/.local/share/nvim/site/pack/packer/start/vim-floaterm",
