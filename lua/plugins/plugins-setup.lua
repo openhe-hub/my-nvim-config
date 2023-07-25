@@ -114,13 +114,17 @@ return require('packer').startup(function(use)
   -- auto save && auto load
   use {
     '0x00-ketsu/autosave.nvim',
-    config = function()
-      require('autosave').setup {
-     }
-    end
+    config = function() require('autosave').setup {} end
   }
 
   use 'djoshea/vim-autoread'
+
+  -- structure overview
+
+  use {
+    'stevearc/aerial.nvim',
+    config = function() require('aerial').setup() end
+  }
 
   if packer_bootstrap then require('packer').sync() end
 end)
