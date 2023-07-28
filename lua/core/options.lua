@@ -35,4 +35,4 @@ opt.termguicolors = true
 opt.signcolumn = "yes"
 
 -- theme
-vim.cmd[[colorscheme gruvbox]]
+vim.cmd[[colorscheme tokyonight]]
