@@ -1,6 +1,6 @@
 vim.opt.list = true
-vim.opt.listchars:append "space:⋅"
-vim.opt.listchars:append ""
+-- vim.opt.listchars:append "space:⋅"
+-- vim.opt.listchars:append ""
 
 require("indent_blankline").setup {
     space_char_blankline = " ",

@@ -28,7 +28,7 @@ return require('packer').startup(function(use)
   use 'folke/tokyonight.nvim'
   use { "ellisonleao/gruvbox.nvim" }
   -- background transparent
-  use 'xiyaowong/transparent.nvim'
+  -- use 'xiyaowong/transparent.nvim'
   -- status bar && icon
   use 'nvim-tree/nvim-web-devicons'
   use {
